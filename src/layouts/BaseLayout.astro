@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import "../styles/global.css";
+const pageTitle = "FinEdge";
 ---
 
 <html lang="en">
@@ -9,23 +10,14 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Contact Us</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <Header />
-    <h1>Contact Us</h1>
-    <form>
-      <label>Name</label>
-      <input />
-      <label>Email</label>
-      <input />
-      <label>Message</label>
-      <input />
-      <button>Submit</button>
-    </form></body
-  >
+    <h1>{pageTitle}</h1>
+    <slot />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
 </html>
-
-<script>
-  import "../scripts/menu.js";
-</script>

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
+
+body {
+  font-family: "Laila", sans-serif;
+  margin: 0px;
+  margin: auto;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #bfdbfe,
+    #c0d9fe,
+    #c1d8fe,
+    #c2d6fe,
+    #c4d4fe,
+    #c7d4fe,
+    #cad3fe,
+    #cdd3fe,
+    #d1d4fe,
+    #d5d4fe,
+    #d9d5fe,
+    #ddd6fe
+  );
+}
+
+:root {
+  --primary-color: #e0e7ff;
+  --secondary-color: #818cf8;
+}
+
+/* nav styles */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: var(--primary-color);
+}
+
+.nav-brand {
+  padding: 1rem;
+  font-size: xx-large;
+  text-align: start;
+  color: var(--secondary-color);
+}
+
+.list-non-bullet {
+  list-style: none;
+  text-align: end;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: var(--primary-color);
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.nav-links a:hover,
+a:focus {
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+input,
+button {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-style: none;
+  font-family: inherit;
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
